@@ -4,10 +4,48 @@ html, body {
 	width: 100vw;
 	height: 100vh;
 	overflow-x: hidden;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Alegreya Sans', sans-serif;
 	line-height: 1.5;
 	font-size: 1.2vw;
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
+}
+header {
+    display: flex;
+    flex-direction: column;
+}
+header > .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 0 92vw;
+    padding: 1vw 4vw;
+}
+.header-actions {
+	display: flex;
+	text-transform: uppercase;
+}
+.title {
+	font-family: 'Alegreya Sans SC';
+	letter-spacing: 1px;
+	word-spacing: 1px;
+}
+.header-action {
+    margin-left: 1.5vw;
+}
+.header-span {
+    margin-right: 1vw;
+}
+.menu {
+    display: flex;
+}
+.logo {
+	flex: 0 0 20%;
+}
+.logo img {
+	width: 100%;
+}
+.menu-list {
+    display: flex;
 }
