@@ -7,6 +7,7 @@ html, body {
 	font-family: 'Alegreya Sans', sans-serif;
 	line-height: 1.5;
 	font-size: 1.2vw;
+	letter-spacing: .5px
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
@@ -14,12 +15,15 @@ h1, h2, h3, h4, h5, h6, p {
 header {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    color: white;
 }
 header > .top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex: 0 0 92vw;
+    flex: 0 0 auto;
     padding: 1vw 4vw;
 }
 .header-actions {
@@ -34,18 +38,63 @@ header > .top {
 .header-action {
     margin-left: 1.5vw;
 }
-.header-span {
+.header-action i.fa, .menu i.fa {
     margin-right: 1vw;
 }
 .menu {
     display: flex;
+    background-color: #00000026;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 4vw;
 }
 .logo {
-	flex: 0 0 20%;
+	flex: 0 0 10%;
 }
 .logo img {
 	width: 100%;
 }
 .menu-list {
     display: flex;
+	text-transform: uppercase;
+}
+.menu-item {
+	margin: 0 1vw;
+}
+section.banner {
+    width: 100vw;
+    height: 46vw;
+    color: white;
+}
+.banner-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.banner-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-desc {
+	position: absolute;
+	right: 8vw;
+	bottom: 4vw;
+	text-align: right;
+}
+.banner-desc .big {
+	font-size: 160%;
+	font-weight: bold;
+}
+.btn {
+	padding: 1vw 3vw;
+	border: none;
+	color: white;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	line-height: 1.5;
+	font-size: 1.3vw;
+}
+.btn.fill {
+	background-color: black;
 }
