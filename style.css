@@ -12,6 +12,9 @@ html, body {
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
+*, *::before, *::after {
+	box-sizing: border-box;
+}
 header {
     display: flex;
     flex-direction: column;
@@ -86,6 +89,7 @@ section.banner {
 .banner-desc .big {
 	font-size: 160%;
 	font-weight: bold;
+	color: #c09b75;
 }
 .btn {
 	padding: 1vw 3vw;
@@ -97,4 +101,37 @@ section.banner {
 }
 .btn.fill {
 	background-color: black;
+}
+
+
+section.product-groups {
+    width: 100vw;
+    height: 23vw;
+    color: white;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+}
+.product-group {
+    flex: 0 0 30%;
+    height: 19vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2vw;
+}
+.product-group:nth-of-type(1) {
+	background-image: url(assets/images/8732a4d4-5688-4e58-b72d-7bbd25025da0.jpg);
+}
+.product-group:nth-of-type(2) {
+	background-image: url(assets/images/ec066e7c-6242-4ead-aba7-0025d9dfd007.jpg);
+}
+.product-group:nth-of-type(3) {
+	background-image: url(assets/images/8732a4d4-5688-4e58-b72d-7bbd25025da0.jpg);
 }
