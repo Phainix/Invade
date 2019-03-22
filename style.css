@@ -19,6 +19,9 @@ h1, h2, h3, h4, h5, h6, p {
 *, *::before, *::after {
 	box-sizing: border-box;
 }
+body {
+	position: relative;
+}
 header {
     display: flex;
     flex-direction: column;
@@ -155,5 +158,45 @@ section.product-groups {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: #00000054;
+	background-color: #00000063;
+}
+
+
+
+
+section.category-list-container {
+    width: 100vw;
+    color: black;
+    background: white;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+}
+.category-list {
+	flex: 0 0 25%;
+}
+.category-item {
+    padding: 1vw;
+    border: 1px solid #e0dede;
+    margin-bottom: 1vw;
+}
+.category-item.title {
+	background-color: black;
+	color: white;
+}
+.show-now {
+    display: flex;
+    flex: 0 0 70%;
+    /* height: 100%; */
+    width: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/images/ed688123-e2c8-4ea7-9db4-1b041d5d945e.jpg);
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 3vw;
 }
