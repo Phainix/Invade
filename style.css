@@ -231,7 +231,7 @@ section.popular-products {
 }
 img.popular-product-img {
     width: 100%;
-    height: 36vw;
+    height: 30vw;
     object-fit: cover;
 }
 .popular-product-desc {
@@ -244,4 +244,29 @@ img.popular-product-img {
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
+}
+.popular-product-overlay {
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    right: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+.popular-product-overlay > * {
+    width: 4vw;
+    height: 4vw;
+    background-color: #051c24;
+    border-radius: 50%;
+    color: #c49675;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 90%;
+    cursor: pointer;
+}
+.popular-product-overlay > div:last-child {
+	background-color: #c49675;
+	color: #051c24;
 }
