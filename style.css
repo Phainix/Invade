@@ -12,6 +12,10 @@ html, body {
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
+a {
+	color: inherit;
+	text-decoration: none;
+}
 .big {
 	font-size: 160%;
 	font-weight: bold;
@@ -199,4 +203,45 @@ section.category-list-container {
     align-items: center;
     justify-content: flex-end;
     padding: 3vw;
+}
+
+
+
+section.popular-products {
+    width: 100vw;
+    color: black;
+    background: white;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+    flex-wrap: wrap;
+}
+
+.popular-products > .title {
+	flex: 0 0 100%;
+	text-align: center;
+	margin-bottom: 3vw;
+}
+.pouplar-product {
+	flex: 0 0 23%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+img.popular-product-img {
+    width: 100%;
+    height: 36vw;
+    object-fit: cover;
+}
+.popular-product-desc {
+    font-weight: bold;
+}
+.popular-product-desc > * {
+    margin-top: 1vw;
+}
+.popular-product-actions {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
 }
