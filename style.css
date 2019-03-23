@@ -1,9 +1,9 @@
 html, body {
 	padding: 0;
 	margin: 0;
-	width: 100vw;
+	width: calc(100vw - 100%);
 	height: 100vh;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	font-family: 'Alegreya Sans', sans-serif;
 	line-height: 1.5;
 	font-size: 1.2vw;
@@ -30,7 +30,7 @@ header {
     display: flex;
     flex-direction: column;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     color: white;
 }
 header > .top {
@@ -62,6 +62,10 @@ header > .top {
     align-items: center;
     justify-content: space-between;
     padding: 0vw 4vw;
+    transition: all .4s;
+}
+.is-sticky .menu {
+	background-color: #000000ab;
 }
 .logo {
 	flex: 0 0 10%;
