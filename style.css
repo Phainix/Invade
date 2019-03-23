@@ -179,7 +179,7 @@ section.category-list-container {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    padding: 2vw 4vw;
+    padding: 4vw 4vw 2vw 4vw;
 }
 .category-list {
 	flex: 0 0 25%;
@@ -218,9 +218,8 @@ section.popular-products {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    padding: 2vw 4vw;
+    padding: 4vw;
     flex-wrap: wrap;
-    margin-bottom: 4vw;
 }
 
 .popular-products > .title {
@@ -323,8 +322,7 @@ section.product-main-categories {
     background: white;
     display: flex;
     justify-content: space-between;
-    padding: 2vw 4vw;
-    margin-bottom: 4vw;
+    padding: 4vw;
 }
 .product-main-category {
     flex: 0 0 48%;
