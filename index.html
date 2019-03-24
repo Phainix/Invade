@@ -26,10 +26,13 @@
 		<div class="top">
 			<span class="call">ORDER ONLINE OR CALL US (1800) 000 8808</span>
 			<div class="header-actions">
-				<div class="header-action"><span><i class="fa fa-search"></i></span> search</div>
+				<form action="" class="action-search">
+					<input type="text" name="" value="" placeholder="Enter...">
+					<button type="submit"><span><i class="fa fa-search"></i></span></button>
+				</form>
+				<div class="header-action" id="search-toggle"><span><i class="fa fa-search"></i></span> <span>search</span></div>
 				<div class="header-action"><span><i class="fa fa-user"></i></span> account</div>
 				<div class="header-action"><span><i class="fa fa-heart"></i></span> wishlist</div>
-				<div class="header-action">1USD</div>
 			</div>
 		</div>
 		<div class="menu" id="sticker">
@@ -248,6 +251,10 @@
 	<script>
 		$(document).ready(function(){
 	    	$("#sticker").sticky({topSpacing:0});
+	    	$("#search-toggle").click(function() {
+	    		$(".action-search").toggleClass('show');
+	    		$(this).toggleClass('show');
+	    	});
 		});
 	</script>
 	<!-- <script>
