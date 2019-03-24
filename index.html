@@ -40,10 +40,109 @@
 				<img src="assets/images/Invade logo - White.png" alt="">
 			</a>
 			<div class="menu-list">
-				<div class="menu-item">home</div>
-				<div class="menu-item">catalog</div>
+				<div class="menu-item has-dropdown">
+					<span class="drop-down-trigger">home</span>
+					<div class="drop-down-menu small">
+						<div class="drop-down-item">Dresses</div>
+						<div class="drop-down-item">Shirts & Blouses</div>
+						<div class="drop-down-item">Jumpers</div>
+						<div class="drop-down-item">Basic & Lingerie</div>
+						<div class="drop-down-item">Skirts</div>
+						<div class="drop-down-item">Coats& Jackets</div>
+						<div class="drop-down-item">Shoes</div>
+						<div class="drop-down-item">Coats</div>
+					</div>
+				</div>
+				<div class="menu-item has-dropdown large">
+					<span class="drop-down-trigger">catalogue</span>
+					<div class="drop-down-menu">
+						<div class="display-menu">
+							<div class="display-menu-list">
+								<img src="assets/images/Invade logo - Black.png" class="display-logo" alt="">
+								<div class="social-details">
+									<span><i class="fa fa-twitter"></i></span>
+									<span><i class="fa fa-linkedin"></i></span>
+									<span><i class="fa fa-medium"></i></span>
+									<span><i class="fa fa-instagram"></i></span>
+								</div>
+							</div>
+							<div class="display-menu-list">
+								<div class="display-menu-item title">Categories</div>
+								<div class="display-menu-item">Dresses</div>
+								<div class="display-menu-item">Shirts & Blouses</div>
+								<div class="display-menu-item">Jumpers</div>
+								<div class="display-menu-item">Basic & Lingerie</div>
+								<div class="display-menu-item">Skirt</div>
+								<div class="display-menu-item">Coats & Jackets</div>
+								<div class="display-menu-item">Shoes</div>
+								<div class="display-menu-item">Coats</div>
+							</div>
+							<div class="display-menu-list">
+								<div class="display-menu-item title">Information</div>
+								<div class="display-menu-item">About Us</div>
+								<div class="display-menu-item">Catalog</div>
+								<div class="display-menu-item">Contact Us</div>
+								<div class="display-menu-item">All Collections</div>
+								<div class="display-menu-item">Privacy Policy</div>
+								<div class="display-menu-item">Services</div>
+								<div class="display-menu-item">News</div>
+							</div>
+							<div class="display-menu-list">
+								<div class="display-menu-item title">Account</div>
+								<div class="display-menu-item">My Account</div>
+								<div class="display-menu-item">Log in</div>
+								<div class="display-menu-item">My Addresses</div>
+								<div class="display-menu-item">My Orders</div>
+								<div class="display-menu-item">Password</div>
+								<div class="display-menu-item">Contact us</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="menu-item">blog</div>
-				<div class="menu-item">sale</div>
+				<div class="menu-item has-dropdown large">
+					<span class="drop-down-trigger">sale</span>
+					<div class="drop-down-menu">
+						<div class="display-menu has-products popup-details">
+							<div class="pouplar-product">
+								<img class="popular-product-img" src="assets/images/Products/IMG_0477.jpg" alt="">
+								<div class="popular-product-desc">
+									<div>
+										<a href=""><b>Lorem Ipsum Dolor Sit Amet</b></a>
+									</div>
+									<div>$150</div>
+								</div>
+							</div>
+							<div class="pouplar-product">
+								<img class="popular-product-img" src="assets/images/Products/IMG_0477.jpg" alt="">
+								<div class="popular-product-desc">
+									<div>
+										<a href=""><b>Lorem Ipsum Dolor Sit Amet</b></a>
+									</div>
+									<div>$150</div>
+								</div>
+							</div>
+							<div class="pouplar-product">
+								<img class="popular-product-img" src="assets/images/Products/IMG_0477.jpg" alt="">
+								<div class="popular-product-desc">
+									<div>
+										<a href=""><b>Lorem Ipsum Dolor Sit Amet</b></a>
+									</div>
+									<div>$150</div>
+								</div>
+							</div>
+							<div class="pouplar-product">
+								<img class="popular-product-img" src="assets/images/Products/IMG_0477.jpg" alt="">
+								<div class="popular-product-desc">
+									<div>
+										<a href=""><b>Lorem Ipsum Dolor Sit Amet</b></a>
+									</div>
+									<div>$150</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="menu-item">contact us</div>
 			</div>
 			<div class="cart-preview">
@@ -254,6 +353,9 @@
 	    	$("#search-toggle").click(function() {
 	    		$(".action-search").toggleClass('show');
 	    		$(this).toggleClass('show');
+	    	});
+	    	$(".has-dropdown").click(function() {
+	    		// $(this).toggleClass('show');
 	    	});
 		});
 	</script>

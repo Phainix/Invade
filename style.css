@@ -100,10 +100,11 @@ div#search-toggle.show::before {
     display: flex;
     background-color: #00000026;
     color: white;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     padding: 0vw 4vw;
     transition: all .4s;
+    position: relative;
 }
 .is-sticky .menu {
 	background-color: #000000ab;
@@ -120,6 +121,9 @@ div#search-toggle.show::before {
 }
 .menu-item {
 	margin: 0 1vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 section.banner {
     width: 100%;
@@ -417,23 +421,24 @@ footer {
 .footer-info {
 	padding: 2vw 4vw;
 }
-.footer-menu {
+.footer-menu, .display-menu {
     padding: 4vw 4vw 2vw;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
-.footer-menu-list {
+
+.footer-menu-list, .display-menu-list {
 	flex: 0 0 25%;
 }
-.footer-menu-list:first-child {
+.footer-menu-list:first-child, .display-menu-list:first-child {
     flex: 0 0 30%;
     padding-right: 2vw;
 }
-.footer-menu-list:last-child {
+.footer-menu-list:last-child, .display-menu-list:last-child {
     flex: 0 0 20%;
 }
-.footer-logo {
+.footer-logo, .display-logo {
 	width: 100%;
 	margin-bottom: 2vw;
 }
@@ -449,4 +454,72 @@ footer {
 }
 .footer-menu-item {
     margin-bottom: .25vw;
+}
+.display-menu-item {
+    padding: .6vw 2vw;
+}
+.display-menu-item.title {
+    margin-bottom: .6vw;
+    text-orientation: uppercase;
+}
+.display-menu {
+	padding: 0;
+}
+.display-menu-list:first-child {
+    align-self: center;
+}
+.display-menu.has-products {
+	padding: 2vw;
+}
+.popup-details .pouplar-product {
+	overflow: hidden;
+}
+.popup-details .popular-product-desc {
+	position: absolute;
+	background-color: white;
+	left: 2vw;
+	width: calc(100% - 4vw);
+	bottom: 2vw;
+	padding: 0vw 1vw 1vw;
+	font-size: 90%;
+	transform: translateY(140%);
+	transition: all .4s;
+}
+.popup-details .pouplar-product:hover .popular-product-desc {
+	transform: none;
+}
+
+.has-dropdown {
+    position: relative;
+}
+.drop-down-menu {
+    position: absolute;
+    top: 100%;
+    background: white;
+    color: black;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .4s;
+}
+.drop-down-item {
+    padding: .6vw 2vw;
+    white-space: nowrap;
+}
+.drop-down-item:hover {
+    background: #bf9c71; 
+    color: #fff;
+}
+.has-dropdown:hover .drop-down-menu, .has-dropdown.show .drop-down-menu {
+	opacity: 1;
+	visibility: visible;
+}
+.large.has-dropdown {
+    position: inherit;
+}
+.large .drop-down-menu {
+    width: 90vw;
+    left: 4vw;
 }
