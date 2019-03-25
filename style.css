@@ -16,6 +16,9 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+button {
+	cursor: pointer;
+}
 .big {
 	font-size: 160%;
 	font-weight: bold;
