@@ -509,7 +509,8 @@ footer {
 	opacity: 0;
 	visibility: hidden;
 	transition: all .4s;
-	box-shadow: 0px 2px 4px #00000059;
+    box-shadow: 0px 2px 4px #00000059;
+    z-index: 1;
 }
 .drop-down-toggle {
 	cursor: pointer;
@@ -604,7 +605,8 @@ img.product-img-thumbnail {
 	display: flex;
 	flex-direction: row;
 	/* align-items: center; */
-	justify-content: flex-start;
+    justify-content: flex-start;
+    position: relative;
 }
 .iziModal {
     max-width: none !important;
@@ -619,7 +621,7 @@ img.product-img-thumbnail {
 .iziModal .iziModal-wrap {
     width: auto !important;
     border-radius: .4vw;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .quickview-image-container {
     flex: 0 0 50%;
@@ -691,4 +693,31 @@ img.quickview-product-thumbnail {
     padding: .7vw 1vw;
     font-weight: bold;
     margin-right: 1vw;
+}
+.modal-close {
+    position: absolute;
+    right: -1vw;
+    top: -1vw;
+    background-color: white;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-close::before, .modal-close::after {
+    content: " ";
+    width: .2vw;
+    height: 2.4vw;
+    background-color: black;
+    position: absolute;
+    border-radius: .4vw;
+}
+.modal-close::before {
+    transform: rotate(45deg);
+}
+.modal-close::after {
+    transform: rotate(-45deg);
 }

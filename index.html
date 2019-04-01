@@ -235,7 +235,7 @@
 				</div>
 				<div>$150</div>
 				<div class="popular-product-actions">
-					<a href=""><span><i class="fa fa-shopping-cart"></i></span> Add to cart</a>
+					<a href="javascript:void(0)" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown"><span><i class="fa fa-shopping-cart"></i></span> Add to cart</a>
 					<span><i class="fa fa-heart-o"></i></span>
 				</div>
 			</div>
@@ -252,7 +252,7 @@
 				</div>
 				<div>$150</div>
 				<div class="popular-product-actions">
-					<a href=""><span><i class="fa fa-shopping-cart"></i></span> Add to cart</a>
+					<a href="javascript:void(0)" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown"><span><i class="fa fa-shopping-cart"></i></span> Add to cart</a>
 					<span><i class="fa fa-heart-o"></i></span>
 				</div>
 			</div>
@@ -269,7 +269,7 @@
 				</div>
 				<div>$150</div>
 				<div class="popular-product-actions">
-					<a href=""><span><i class="fa fa-shopping-cart"></i></span> Add to cart</a>
+					<a href="javascript:void(0)" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown"><span><i class="fa fa-shopping-cart"></i></span> Add to cart</a>
 					<span><i class="fa fa-heart-o"></i></span>
 				</div>
 			</div>
@@ -286,7 +286,7 @@
 				</div>
 				<div>$150</div>
 				<div class="popular-product-actions">
-					<a href=""><span><i class="fa fa-shopping-cart"></i></span> Add to cart</a>
+					<a href="javascript:void(0)" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown"><span><i class="fa fa-shopping-cart"></i></span> Add to cart</a>
 					<span><i class="fa fa-heart-o"></i></span>
 				</div>
 			</div>
@@ -375,11 +375,12 @@
 			<div>&copy; Invade NG. Powered by NIX</div>
 		</div>
 	</footer>
-	<a href="#" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">Modal</a>
+	<!-- <a href="#" data-izimodal-open="#modal" data-izimodal-transitionin="fadeInDown">Modal</a> -->
 	<!-- Modal structure -->
 	<div id="modal" class="iziModal"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
 	    <!-- Modal content -->
 	    <div class="quickview">
+				<button class="modal-close" data-izimodal-close="" data-izimodal-transitionin="fadeOutDown"></button>
 	    	<div class="quickview-image-container">
 	    		<div class="quickview-product-thumbnails">
 	    			<img class="quickview-product-thumbnail" src="assets/images/Products/IMG_0477.jpg" alt="">
@@ -443,12 +444,23 @@
 										<div class="drop-down-item">M</div>
 										<div class="drop-down-item">L</div>
 										<div class="drop-down-item">XL</div>
-										<div class="drop-down-item">XLL</div>
-										<div class="drop-down-item">XLLL</div>
 									</div>
 								</div>
 						</div>
+						<div class="quickview-quantity">
+								<div class="has-dropdown">
+										<span class="drop-down-trigger">Quantity</span>
+										<div class="drop-down-menu small">
+											<div class="drop-down-item">1</div>
+											<div class="drop-down-item">2</div>
+											<div class="drop-down-item">3</div>
+											<div class="drop-down-item">4</div>
+											<div class="drop-down-item">5</div>
+										</div>
+									</div>
+							</div>
 					</div>
+					<button class="btn fill">ADD TO CART</button>
 				</div>
 				</div>
 	    </div>
