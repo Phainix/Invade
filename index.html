@@ -5,6 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Invade</title>
 	<link rel="stylesheet" href="assets/plugins/iziModal.min.css">
+	<link rel="stylesheet" href="assets/plugins/flickity.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity-fade@1/flickity-fade.css">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700|Alegreya+Sans:300,600" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,7 +24,7 @@
 		}
 	</style>
 </head>
-<body>
+<body class="home">
 	<header class="title" id="">
 		<div class="top">
 			<span class="call">ORDER ONLINE OR CALL US (1800) 000 8808</span>
@@ -182,12 +184,22 @@
 		</div>
 	</header>
 	<section class="banner">
-		<div class="banner-item">
-			<img src="assets/images/6235ab0e-860f-4309-965c-43a2557496cc.jpg" alt="">
-			<div class="banner-desc">
-				<div class="title">NEW ARRIVALS</div>
-				<div class="big">Fashion Items from $30</div>
-				<button class="btn fill">SHOP NOW</button>
+		<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "fade": false, "pageDots": false }'>
+			<div class="carousel-cell banner-item">
+				<img src="assets/images/6235ab0e-860f-4309-965c-43a2557496cc.jpg" alt="">
+				<div class="banner-desc">
+					<div class="title">NEW ARRIVALS</div>
+					<div class="big">Fashion Items from $30</div>
+					<button class="btn fill">SHOP NOW</button>
+				</div>
+			</div>
+			<div class="carousel-cell banner-item">
+				<img src="assets/images/ead1bdf5-76c5-4662-8155-773d6dc35178.jpg" alt="">
+				<div class="banner-desc">
+					<div class="title">HOT IN DEMAND</div>
+					<div class="big">Trending items</div>
+					<button class="btn fill">SHOP NOW</button>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -469,6 +481,8 @@
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="assets/plugins/jquery.sticky.js"></script>
 	<script src="assets/plugins/iziModal.min.js"></script>
+	<script src="assets/plugins/flickity.pkgd.min.js"></script>
+	<script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
 	<script>
 		$(document).ready(function(){
 	    	$("#sticker").sticky({topSpacing:0});
