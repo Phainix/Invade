@@ -14,12 +14,16 @@
     position: absolute;
     right: -.6vw;
 }
+.breadcrumb:first-child {
+    padding-left: 0;
+}
 .main-content.contains-products {
     display: flex;
     flex-direction: column;
 }
 .product-container {
     display: flex;
+    margin: 2vw 0vw;
 }
 .category-container {
     display: flex;
@@ -47,4 +51,76 @@ img.category-img {
 span.category-desc {
     padding: 1vw 2vw;
     font-weight: bold;
+}
+.product-sidebar {
+    flex: 0 0 15%;
+    padding: 2vw 0vw;
+}
+.product-main {
+    display: flex;
+    flex-direction: column;
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.product {
+    flex: 0 0 31.3%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 2vw 0;
+}
+.product:nth-of-type(3n+1), .product:nth-of-type(3n+2) {
+    margin-right: 3%;
+}
+.product-filter {
+    border: 1px solid #ddd;
+    padding: 1vw 2vw;
+    margin-top: 1vw;
+}
+select#sort {
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    padding: .6vw 1vw;
+    margin: 0vw 1vw;
+}
+.product-main .title {
+    font-size: 140%;
+}
+.product-filter.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.page {
+    padding: .2vw .4vw;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.page:hover {
+    color: #bbb;
+}
+.page.active {
+    font-weight: bold;
+}
+.page.next::after {
+    content: '\f105';
+    font: 14px/1em "FontAwesome";
+    position: absolute;
+    right: -.4vw;
+}
+.page.prev::after {
+    content: '\f104';
+    font: 14px/1em "FontAwesome";
+    position: absolute;
+    left: -.4vw;
+}
+.product-detail-container {
+    display: flex;
+    padding: 2vw 0vw;
 }

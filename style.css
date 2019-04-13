@@ -6,7 +6,7 @@ html, body {
 	/*overflow-x: hidden;*/
 	font-family: 'Alegreya Sans', sans-serif;
 	line-height: 1.5;
-	font-size: 1.2vw;
+	font-size: 1.1vw;
 	letter-spacing: .5px
 }
 h1, h2, h3, h4, h5, h6, p {
@@ -48,7 +48,10 @@ header > .top {
     align-items: center;
     justify-content: space-between;
     flex: 0 0 auto;
-    padding: 1vw 4vw;
+    padding: .6vw 4vw;
+}
+:not(.home) header > .top {
+    border-bottom: 1px solid #ffffff54;
 }
 .header-actions {
 	display: flex;
@@ -740,3 +743,18 @@ img.quickview-product-thumbnail {
 .modal-close::after {
     transform: rotate(-45deg);
 }
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+  .center {
+      text-align: center;
+  }

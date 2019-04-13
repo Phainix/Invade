@@ -8,178 +8,10 @@
     <link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700|Alegreya+Sans:300,600" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-		/* The sticky class is added to the header with JS when it reaches its scroll position */
-		.sticky {
-		  position: fixed;
-		  top: 0;
-		  width: 100%
-		}
-
-		/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-		.sticky + .content {
-		  padding-top: 102px;
-		}
-	</style>
 </head>
 <body class="main">
-	<header class="title" id="">
-		<div class="top">
-			<span class="call">ORDER ONLINE OR CALL US (1800) 000 8808</span>
-			<div class="header-actions">
-				<form action="" class="action-search">
-					<input type="text" name="" value="" placeholder="Enter...">
-					<button type="submit"><span><i class="fa fa-search"></i></span></button>
-				</form>
-				<div class="header-action" id="search-toggle"><span><i class="fa fa-search"></i></span> <span>search</span></div>
-				<div class="header-action"><span><i class="fa fa-user"></i></span> account</div>
-				<div class="header-action"><span><i class="fa fa-heart"></i></span> wishlist</div>
-			</div>
-		</div>
-		<div class="menu" id="sticker">
-			<a class="logo">
-				<img src="assets/images/Invade logo - White.png" alt="">
-			</a>
-			<div class="menu-list">
-				<div class="menu-item has-dropdown">
-					<span class="drop-down-trigger">home</span>
-					<div class="drop-down-menu small">
-						<div class="drop-down-item">Dresses</div>
-						<div class="drop-down-item">Shirts & Blouses</div>
-						<div class="drop-down-item">Jumpers</div>
-						<div class="drop-down-item">Basic & Lingerie</div>
-						<div class="drop-down-item">Skirts</div>
-						<div class="drop-down-item">Coats& Jackets</div>
-						<div class="drop-down-item">Shoes</div>
-						<div class="drop-down-item">Coats</div>
-					</div>
-				</div>
-				<div class="menu-item has-dropdown large">
-					<span class="drop-down-trigger">catalogue</span>
-					<div class="drop-down-menu">
-						<div class="display-menu">
-							<div class="display-menu-list">
-								<img src="assets/images/Invade logo - Black.png" class="display-logo" alt="">
-								<div class="social-details">
-									<span><i class="fa fa-twitter"></i></span>
-									<span><i class="fa fa-linkedin"></i></span>
-									<span><i class="fa fa-medium"></i></span>
-									<span><i class="fa fa-instagram"></i></span>
-								</div>
-							</div>
-							<div class="display-menu-list">
-								<div class="display-menu-item title">Categories</div>
-								<div class="display-menu-item">Dresses</div>
-								<div class="display-menu-item">Shirts & Blouses</div>
-								<div class="display-menu-item">Jumpers</div>
-								<div class="display-menu-item">Basic & Lingerie</div>
-								<div class="display-menu-item">Skirt</div>
-								<div class="display-menu-item">Coats & Jackets</div>
-								<div class="display-menu-item">Shoes</div>
-								<div class="display-menu-item">Coats</div>
-							</div>
-							<div class="display-menu-list">
-								<div class="display-menu-item title">Information</div>
-								<div class="display-menu-item">About Us</div>
-								<div class="display-menu-item">Catalog</div>
-								<div class="display-menu-item">Contact Us</div>
-								<div class="display-menu-item">All Collections</div>
-								<div class="display-menu-item">Privacy Policy</div>
-								<div class="display-menu-item">Services</div>
-								<div class="display-menu-item">News</div>
-							</div>
-							<div class="display-menu-list">
-								<div class="display-menu-item title">Account</div>
-								<div class="display-menu-item">My Account</div>
-								<div class="display-menu-item">Log in</div>
-								<div class="display-menu-item">My Addresses</div>
-								<div class="display-menu-item">My Orders</div>
-								<div class="display-menu-item">Password</div>
-								<div class="display-menu-item">Contact us</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="menu-item">blog</div>
-				<div class="menu-item has-dropdown large">
-					<span class="drop-down-trigger">sale</span>
-					<div class="drop-down-menu">
-						<div class="display-menu has-products popup-details">
-							<div class="pouplar-product">
-								<img class="popular-product-img" src="assets/images/Products/IMG_0477.jpg" alt="">
-								<div class="popular-product-desc">
-									<div>
-										<a href=""><b>Lorem Ipsum Dolor Sit Amet</b></a>
-									</div>
-									<div>$150</div>
-								</div>
-							</div>
-							<div class="pouplar-product">
-								<img class="popular-product-img" src="assets/images/Products/IMG_0477.jpg" alt="">
-								<div class="popular-product-desc">
-									<div>
-										<a href=""><b>Lorem Ipsum Dolor Sit Amet</b></a>
-									</div>
-									<div>$150</div>
-								</div>
-							</div>
-							<div class="pouplar-product">
-								<img class="popular-product-img" src="assets/images/Products/IMG_0477.jpg" alt="">
-								<div class="popular-product-desc">
-									<div>
-										<a href=""><b>Lorem Ipsum Dolor Sit Amet</b></a>
-									</div>
-									<div>$150</div>
-								</div>
-							</div>
-							<div class="pouplar-product">
-								<img class="popular-product-img" src="assets/images/Products/IMG_0477.jpg" alt="">
-								<div class="popular-product-desc">
-									<div>
-										<a href=""><b>Lorem Ipsum Dolor Sit Amet</b></a>
-									</div>
-									<div>$150</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="menu-item">contact us</div>
-			</div>
-			<div class="cart-preview has-dropdown">
-				<span class="drop-down-toggle"><i class="fa fa-shopping-bag"></i>MY CART: 2 item(s)</span>
-				<div class="drop-down-menu small">
-					<div class="cart-drop-down-items">
-						<div class="cart-drop-down-item">
-							<img class="product-img-thumbnail" src="assets/images/Products/IMG_1754.jpg" alt="">
-							<div class="product-desc">
-								<div>Illusion Yoke Lace Sheath Dress</div>
-								<div>$80.00 x 1</div>
-							</div>
-							<div class="product-actions">
-								<span><i class="fa fa-trash"></i></span>
-							</div>
-						</div>
-						<div class="cart-drop-down-item">
-							<img class="product-img-thumbnail" src="assets/images/Products/d4d721f1-5a7f-4e20-848c-ac1cfc126fb4.jpg" alt="">
-							<div class="product-desc">
-								<div>Illusion Yoke Lace Sheath Dress</div>
-								<div>$80.00 x 4</div>
-							</div>
-							<div class="product-actions">
-								<span><i class="fa fa-trash"></i></span>
-							</div>
-						</div>
-						<div class="cart-drop-down-actions">
-							<span class="total">Total price: $220.00</span>
-							<span title="Clear Cart"><i class="fa fa-refresh"></i></span>
-							<button class="btn fill">VIEW CART</button>
-							<button class="btn fill">CHECKOUT</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<header class="title" id="header">
+		
     </header>
     <section class="main-content">
         <div class="breadcrumbs">
@@ -189,43 +21,43 @@
         <div class="category-container">
             <div class="title">CATEGORIES</div>
             <div class="categories">
-                <a class="category" href="javascript:void(0)">
+                <a class="category" href="products.html">
                     <img src="" alt="" class="category-img">
                     <span class="category-desc title">
                         CHILDREN'S CLOTHING
                     </span>
                 </a>
-                <a class="category" href="javascript:void(0)">
+                <a class="category" href="products.html">
                     <img src="" alt="" class="category-img">
                     <span class="category-desc title">
                         CHILDREN'S CLOTHING
                     </span>
                 </a>
-                <a class="category" href="javascript:void(0)">
+                <a class="category" href="products.html">
                     <img src="" alt="" class="category-img">
                     <span class="category-desc title">
                         CHILDREN'S CLOTHING
                     </span>
                 </a>
-                <a class="category" href="javascript:void(0)">
+                <a class="category" href="products.html">
                     <img src="" alt="" class="category-img">
                     <span class="category-desc title">
                         CHILDREN'S CLOTHING
                     </span>
                 </a>
-                <a class="category" href="javascript:void(0)">
+                <a class="category" href="products.html">
                     <img src="" alt="" class="category-img">
                     <span class="category-desc title">
                         CHILDREN'S CLOTHING
                     </span>
                 </a>
-                <a class="category" href="javascript:void(0)">
+                <a class="category" href="products.html">
                     <img src="" alt="" class="category-img">
                     <span class="category-desc title">
                         CHILDREN'S CLOTHING
                     </span>
                 </a>
-                <a class="category" href="javascript:void(0)">
+                <a class="category" href="products.html">
                     <img src="" alt="" class="category-img">
                     <span class="category-desc title">
                         CHILDREN'S CLOTHING
@@ -240,55 +72,13 @@
             </div>
         </div>
     </section>
-	<footer>
-		<div class="footer-menu">
-			<div class="footer-menu-list">
-				<img src="assets/images/Invade logo - White.png" class="footer-logo" alt="">
-				<div class="social-details">
-					<span><i class="fa fa-twitter"></i></span>
-					<span><i class="fa fa-linkedin"></i></span>
-					<span><i class="fa fa-medium"></i></span>
-					<span><i class="fa fa-instagram"></i></span>
-				</div>
-			</div>
-			<div class="footer-menu-list">
-				<div class="footer-menu-item title">Categories</div>
-				<div class="footer-menu-item">Dresses</div>
-				<div class="footer-menu-item">Shirts & Blouses</div>
-				<div class="footer-menu-item">Jumpers</div>
-				<div class="footer-menu-item">Basic & Lingerie</div>
-				<div class="footer-menu-item">Skirt</div>
-				<div class="footer-menu-item">Coats & Jackets</div>
-				<div class="footer-menu-item">Shoes</div>
-				<div class="footer-menu-item">Coats</div>
-			</div>
-			<div class="footer-menu-list">
-				<div class="footer-menu-item title">Information</div>
-				<div class="footer-menu-item">About Us</div>
-				<div class="footer-menu-item">Catalog</div>
-				<div class="footer-menu-item">Contact Us</div>
-				<div class="footer-menu-item">All Collections</div>
-				<div class="footer-menu-item">Privacy Policy</div>
-				<div class="footer-menu-item">Services</div>
-				<div class="footer-menu-item">News</div>
-			</div>
-			<div class="footer-menu-list">
-				<div class="footer-menu-item title">Account</div>
-				<div class="footer-menu-item">My Account</div>
-				<div class="footer-menu-item">Log in</div>
-				<div class="footer-menu-item">My Addresses</div>
-				<div class="footer-menu-item">My Orders</div>
-				<div class="footer-menu-item">Password</div>
-				<div class="footer-menu-item">Contact us</div>
-			</div>
-		</div>
-		<div class="footer-info">
-			<div>&copy; Invade NG. Powered by NIX</div>
-		</div>
+	<footer id="footer">
+		
 	</footer>
 
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="assets/plugins/jquery.sticky.js"></script>
+    <script src="assets/plugins/jquery.sticky.js"></script>
+    <script src="app/components.js"></script>
 	<script>
 		$(document).ready(function(){
 	    	
