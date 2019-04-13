@@ -1,7 +1,12 @@
-<div id="modal" class="iziModal"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
-    <!-- Modal content -->
+<div id="modal"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                        <button type="button" class="abs close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
     <div class="quickview">
-            <button class="modal-close" data-izimodal-close="" data-izimodal-transitionin="fadeOutDown"></button>
+           
         <div class="quickview-image-container">
             <div class="quickview-product-thumbnails">
                 <img class="quickview-product-thumbnail" src="assets/images/Products/IMG_0477.jpg" alt="">
@@ -35,15 +40,8 @@
                 </div>
                 <div class="quickview-actions">
                     <div class="quickview-material">
-                        <div class="has-dropdown">
-                                <span class="drop-down-trigger">Material</span>
-                                <div class="drop-down-menu small">
-                                    <div class="drop-down-item">Leather</div>
-                                    <div class="drop-down-item">Lace</div>
-                                    <div class="drop-down-item">Fabric</div>
-                                    <div class="drop-down-item">Basic & Lingerie</div>
-                                </div>
-                            </div>
+                        <button class="btn fill sm" href="javascript:void(0)" data-target="#material" data-toggle="modal">select material</button>  &nbsp; <span>No material selected</span>
+                        
                     </div>
                     <!-- <div class="quickview-color">
                         <div class="has-dropdown">
@@ -81,7 +79,55 @@
                                 </div>
                         </div> -->
                 </div>
-                <button class="btn fill">ADD TO CART</button>
+                <button class="btn sm fill">add to cart</button>
             </div>
         </div>
+        </div>
+        </div>
+        </div>
+</div>
+
+
+
+<div id="material" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Select Material</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                  <div class="modal-body">
+    <div class="quickview">
+        <div class="materials">
+            <div class="material">
+                <img src="assets\images\thread-4058667_1920.jpg" alt="" class="material-img">
+                <span class="material-desc">Cashmere</span>
+            </div>
+            <div class="material">
+                <img src="assets\images\thread-4058667_1920.jpg" alt="" class="material-img">
+                <span class="material-desc">Cashmere</span>
+            </div>
+            <div class="material">
+                <img src="assets\images\thread-4058667_1920.jpg" alt="" class="material-img">
+                <span class="material-desc">Cashmere</span>
+            </div>
+            <div class="material">
+                <img src="assets\images\thread-4058667_1920.jpg" alt="" class="material-img">
+                <span class="material-desc">Cashmere</span>
+            </div>
+            <div class="material">
+                <img src="assets\images\thread-4058667_1920.jpg" alt="" class="material-img">
+                <span class="material-desc">Cashmere</span>
+            </div>
+            <div class="material">
+                <img src="assets\images\thread-4058667_1920.jpg" alt="" class="material-img">
+                <span class="material-desc">Cashmere</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
 </div>

@@ -19,10 +19,6 @@ $(document).ready(function(){
 
             }).done(function(data) {
                 $(components[index].element).append(data);
-
-                if(components[index].link == 'modal.html') {
-                    $(".iziModal").iziModal();
-                }
             });
 
         })(i);
