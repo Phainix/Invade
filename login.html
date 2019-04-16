@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Invade | Login</title>
+    <link rel="stylesheet" href="assets/plugins/bootstrap.min.css" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:700|Alegreya+Sans:300,600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="main">
+    <header class="title" id="header"></header>
+    <section class="main-content">
+      <div class="breadcrumbs">
+        <span class="breadcrumb"><a href="javascript:void(0)">Home</a></span>
+        <span class="breadcrumb"><a href="javascript:void(0)">Login</a></span>
+      </div>
+      <div class="auth-container">
+        <div class="register auth">
+          <small>New here?</small>
+          <form action="accountfirst.html" method="post">
+                <div class="input-group">
+                    <label for="register-name">Full Name</label>
+                    <input
+                        type="text"
+                        name="register-name"
+                        id="register-name"
+                        class="form-input"
+                    />
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Email Address</label>
+                    <input
+                        type="email"
+                        name="register-email"
+                        id="register-email"
+                        class="form-input"
+                    />
+                </div>
+                <div class="input-group">
+                    <label for="register-number">Phone Number</label>
+                    <input
+                        type="text"
+                        name="register-number"
+                        id="register-number"
+                        class="form-input"
+                    />
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Password</label>
+                    <input
+                        type="password"
+                        name="register-password"
+                        id="register-password"
+                        class="form-input"
+                    />
+                </div>
+                <div class="input-group flex-row">
+                    <button class="fill btn">REGISTER</button>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href="forgot.html">Forgot your password?</a>
+                </div>
+            </form>
+        </div>
+        <div class="login auth">
+            <small>Already registered?</small>
+            <form action="account.html" method="post">
+                <div class="input-group">
+                    <label for="login-email">Email Address</label>
+                    <input
+                        type="email"
+                        name="login-email"
+                        id="login-email"
+                        class="form-input"
+                    />
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input
+                        type="password"
+                        name="login-password"
+                        id="login-password"
+                        class="form-input"
+                    />
+                </div>
+                <div class="input-group flex-row">
+                    <button class="fill btn">LOGIN</button>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href="forgot.html">Forgot your password?</a>
+                </div>
+            </form>
+        </div>
+      </div>
+    </section>
+    <footer id="footer"></footer>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/plugins/jquery.sticky.js"></script>
+    <script src="assets/plugins/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script> -->
+    <script src="app/components.js"></script>
+    <script>
+      $(document).ready(function() {});
+    </script>
+  </body>
+</html>

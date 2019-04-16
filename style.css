@@ -18,8 +18,8 @@ h6 {
 h5 {
     font-size: 115%;
 }
-a, a:hover, a:focus {
-	color: inherit;
+a {
+	color: initial;
 	text-decoration: none;
 }
 button {
@@ -831,4 +831,129 @@ span.material-desc {
 .modal-header::after, .modal-header::before {
     content: "";
     display: none;
+}
+.auth-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+.auth {
+    flex: 0 0 48%;
+    border: 1px solid #ddd;
+    border-top: 2px solid black;
+    padding: 2vw;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5vw 0vw;
+}
+.form-input {
+    padding: .6vw 1.6vw;
+    border: 1px solid #ddd;
+}
+.input-group.flex-row {
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-container {
+    margin: 2vw 0vw;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-container > div {
+    flex: 0 0 31%;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+.contacts > div {
+    margin-bottom: 1vw;
+}
+.contacts-item {
+    display: flex;
+}
+span.contacts-icon {
+    font-size: 4vw;
+    margin-right: 2vw;
+}
+.contacts-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.basic-container {
+    padding: 2vw 0vw;
+}
+.terms dt {
+    margin-bottom: 1vw;
+}
+.terms dd {
+    margin-bottom: 2vw;
+}
+
+.about-img {
+    width: 24vw;
+    height: 24vw;
+    object-fit: cover;
+    float: left;
+    margin: 0vw 2vw 1vw 0vw;
+}
+.about-container {
+    margin-top: 2vw;
+    text-align: justify;
+}
+.designer-register {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.designer-register .input-group {
+    flex: 0 0 48%;
+}
+
+.cart-view-item {
+    display: flex;
+    padding: 1vw 0vw;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.cart-view-item.heading {
+    font-weight: bold;
+    font-size: 120%;
+    border-bottom: 2px solid #ddd;
+}
+.cart-price, .cart-total {
+    flex: 0 0 10%;
+    font-weight: bold;
+    font-size: 120%;
+}
+.cart-product {
+    flex: 0 0 80%;
+    display: flex;
+    align-items: center;
+}
+img.cart-view-img {
+    margin-right: 3vw;
+    width: 12vw;
+    height: 18vw;
+    object-fit: cover;
+    flex: 0 0 12vw;
+}
+.cart-view-desc > * {
+    margin-bottom: .6vw;
+}
+.cart-view-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 0vw;
+}
+img.cart-view-thumb {
+    margin-right: 2vw;
+    width: 6vw;
+    height: 9vw;
+    object-fit: cover;
+    flex: 0 0 6vw;
 }

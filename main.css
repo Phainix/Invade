@@ -1,6 +1,10 @@
 .main-content {
     padding: 2vw 4vw;
 }
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+}
 .breadcrumb {
     padding: 0vw 1vw;
     position: relative;
@@ -12,7 +16,7 @@
     content: '\f105';
     font: 14px/1em "FontAwesome";
     position: absolute;
-    right: -.6vw;
+    right: -.35vw;
 }
 .breadcrumb:first-child {
     padding-left: 0;
@@ -123,4 +127,19 @@ select#sort {
 .product-detail-container {
     display: flex;
     padding: 2vw 0vw;
+}
+
+.checkout-content {
+    display: flex;
+    padding: 0;
+}
+.checkout-content .basic-container {
+    flex: 0 0 60%;
+    padding: 2vw;
+}
+.checkout-content .checkout-products {
+    flex: 0 0 40%;
+    background: #efefef;
+    padding: 2vw;
+    border-left: 1px solid #ccc;
 }
