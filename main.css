@@ -139,7 +139,8 @@ select#sort {
 }
 .checkout-content .checkout-products {
     flex: 0 0 40%;
-    background: #efefef;
+    background: #fafafa;
     padding: 2vw;
     border-left: 1px solid #ccc;
+    min-height: 100vh;
 }
