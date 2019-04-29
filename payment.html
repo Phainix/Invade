@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Invade | Checkout</title>
+    <title>Invade | Payment</title>
     <link rel="stylesheet" href="assets/plugins/bootstrap.min.css" />
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="style.css" />
@@ -25,86 +25,50 @@
                 <span class="breadcrumb"><a href="javascript:void(0)">Home</a></span>
                 <span class="breadcrumb"><a href="javascript:void(0)">Cart</a></span>
                 <span class="breadcrumb"><a href="javascript:void(0)">Customer Information</a></span>
+                <span class="breadcrumb"><a href="javascript:void(0)">Shipping</a></span>
+                <span class="breadcrumb"><a href="javascript:void(0)">Payment</a></span>
                 </div>
-            <div class="title mt2">SHOPPING CART</div>
-            <div class="shipping-info">
-              <form action="" method="post">
-                <div class="input-group flex-row wrap spaceb shipping-address">
-                  <label for="shipping-address" class="flex100">Shipping Address</label>
-                  <select name="shipping-address" id="shipping-address" class="form-input flex60">
-                    <option value="" default>Select shipping address</option>
-                    <option value="">5, Lorem Isum Way, Dolor Street, Off Sit Close, Amet, Lagos.</option>
-                    <option value="">15, Lorem Isum Way, Dolor Street, Off Sit Close, Amet, Lagos.</option>
-                  </select>
-                  <button class="fill btn sm flex30"><i class="fa fa-plus"></i> add new address</button>
+            <div class="title mt2">PAYMENT</div>
+            <div class="info">
+                <div class="bordered-box padded">
+                    <div class="border-bottom">
+                        <span class="flex20">Contact</span>
+                        <span  class="flex80">+234 818 550 9326</span>
+                    </div>
+                    <div class="border-bottom">
+                        <span class="flex20">Ship to</span>
+                        <span class="flex80">5, Lorem Isum Way, Dolor Street, Off Sit Close, Amet, Lagos, Nigeria</span>
+                    </div>
+                    <div>
+                        <span class="flex20">Shipping</span>
+                        <span class="flex80">Oyo, Ekiti, Osun, Ondo, Ogun, Edo, Kwara</span>
+                    </div>
                 </div>
-                <div class="input-group flex-row spaceb">
-                    <input
-                        type="text"
-                        name="register-name"
-                        id="register-name"
-                        class="form-input flex47-5"
-                        placeholder="First Name"
-                    />
-                    <input
-                        type="email"
-                        name="register-email"
-                        id="register-email"
-                        class="form-input flex47-5"
-                        placeholder="Last Name"
-                    />
+                <div class="title">payment method</div>
+                <div class="bordered-box">
+                    <div class="">
+                        <span class="flex10"><input type="radio" name="payment-method" id=""></span>
+                        <span  class="flex80">
+                            <img src="assets\images\paystack.png" alt="" class="payment-img">
+                        </span>
+                        <span  class="flex10">₦1,000</span>
+                    </div>
                 </div>
-                <div class="input-group">
-                    <input
-                        type="text"
-                        name="register-number"
-                        id="register-number"
-                        class="form-input"
-                        placeholder="Address"
-                    />
-                </div>
-                <div class="input-group">
-                    <input
-                        type="text"
-                        name="register-password"
-                        id="register-password"
-                        class="form-input"
-                        placeholder="Apartment, suite etc. (optional)"
-                    />
-                </div>
-                <div class="input-group">
-                    <input
-                        type="text"
-                        name="register-password"
-                        id="register-password"
-                        class="form-input"
-                        placeholder="City"
-                    />
-                </div>
-                <div class="input-group flex-row spaceb alignini">
-                    <select name="state" class="form-input flex30">
-                        <option value="" default>Select country</option>
-                        <option value="">Nigeria</option>
-                        <option value="">Others</option>
-                    </select>
-                    <select name="state" class="form-input flex30">
-                        <option value="" default>Select state</option>
-                        <option value="">Lagos</option>
-                        <option value="">Others</option>
-                    </select>
-                    <input
-                        type="text"
-                        name="register-password"
-                        id="register-password"
-                        class="form-input flex30"
-                        placeholder="Postal Code"
-                    />
+                <div class="title">billing method</div>
+                <div class="bordered-box">
+                    <div class="border-bottom">
+                        <span class="flex10"><input type="radio" name="billing-address" id=""></span>
+                        <span  class="flex90">Same as shipping address</span>
+                    </div>
+                    <div>
+                        <span class="flex10"><input type="radio" name="billing-address" id=""></span>
+                        <span  class="flex90">Use a different billing address</span>
+                    </div>
                 </div>
                 <div class="input-group flex-row spaceb">
-                    <a href="cart.html"><i class="fa fa-angle-left"></i> &nbsp; Return to cart</a>
-                    <a href="shipping.html" class="fill btn sm">continue to shipping information</a>
+                    <a href="checkout.html"><i class="fa fa-angle-left"></i> &nbsp; Return to shipping</a>
+                    <a href="payment.html" class="fill btn sm">pay now</a>
                 </div>
-              </form>
             </div>
             
       </div>
@@ -138,8 +102,12 @@
                 </div>
                 <div class="cart-view-item">
                     <div class="cart-product">Shipping</div>
-                    <div class="cart-price"><small>Calculated next</small></div>
+                    <div class="cart-price">₦3,500</div>
                 </div>
+                <div class="cart-view-item">
+                        <div class="cart-product">Transaction charge</div>
+                        <div class="cart-price">₦500</div>
+                    </div>
                 <div class="cart-view-item">
                     <div class="cart-product">Total</div>
                     <div class="cart-price">$160.00</div>

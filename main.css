@@ -79,6 +79,21 @@ span.category-desc {
 .product:nth-of-type(3n+1), .product:nth-of-type(3n+2) {
     margin-right: 3%;
 }
+.quad .product {
+    flex: 0 0 22.75%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 2vw 0;
+}
+.quad .product:nth-of-type(4n+1), .quad .product:nth-of-type(4n+2), .quad .product:nth-of-type(4n+3) {
+    margin-right: 3%;
+}
+.quad img.popular-product-img {
+    width: 100%;
+    height: 26vw;
+    object-fit: cover;
+}
 .product-filter {
     border: 1px solid #ddd;
     padding: 1vw 2vw;
@@ -143,4 +158,45 @@ select#sort {
     padding: 2vw;
     border-left: 1px solid #ccc;
     min-height: 100vh;
+}
+.shipping-address {
+    align-items: initial !important;
+    margin-bottom: 3vw;
+}
+
+.bordered-box {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5vw 0vw;
+    border: 1px solid #ccc;
+    border-radius: .5vw;
+}
+.bordered-box.padded {
+    padding: .6vw 1vw;
+}
+.border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+.bordered-box > div {
+    padding: .6vw 1vw;
+    display: flex;
+}
+.bordered-box.padded > div {
+    padding: .4vw 0vw;
+}
+.payment-img {
+    width: 6vw;
+    height: 6vw;
+    object-fit: cover;
+    border-radius: .4vw;
+}
+.measurement-img img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.bordered-top-box {
+    border: 1px solid #ddd;
+    border-top: 2px solid black;
+    padding: 2vw;
 }

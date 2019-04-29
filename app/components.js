@@ -19,6 +19,12 @@ $(document).ready(function(){
 
             }).done(function(data) {
                 $(components[index].element).append(data);
+                if(components[index].element == '#header') {
+                    $("#search-toggle").click(function() {
+                        $(".action-search").toggleClass("show");
+                        $(this).toggleClass("show");
+                    });
+                }
             });
 
         })(i);

@@ -19,8 +19,11 @@ h5 {
     font-size: 115%;
 }
 a {
-	color: initial;
+	color: inherit;
 	text-decoration: none;
+}
+.nopadd {
+    padding: 0;
 }
 button {
 	cursor: pointer;
@@ -34,6 +37,54 @@ button {
 }
 *, *::before, *::after {
 	box-sizing: border-box;
+}
+.w40 {
+    width: 40vw;
+}
+.w50 {
+    width: 50vw;
+}
+.flex10 {
+    flex: 0 0 10%;
+}
+.flex20 {
+    flex: 0 0 20%;
+}
+.flex30 {
+    flex: 0 0 30%;
+}
+.flex40 {
+    flex: 0 0 40%;
+}
+.flex45 {
+    flex: 0 0 45%;
+}
+.flex47 {
+    flex: 0 0 47%;
+}
+.flex47-5 {
+    flex: 0 0 47.5%;
+}
+.flex50 {
+    flex: 0 0 50%;
+}
+.flex60 {
+    flex: 0 0 60%;
+}
+.flex70 {
+    flex: 0 0 70%;
+}
+.flex80 {
+    flex: 0 0 80%;
+}
+.flex90 {
+    flex: 0 0 90%;
+}
+.flex100 {
+    flex: 0 0 100%;
+}
+.mt2 {
+    margin-top: 2vw;
 }
 body {
 	position: relative;
@@ -204,8 +255,20 @@ section.banner {
 	background-color: white;
 	color: black;
 }
+.btn.bordered.black {
+    background-color: transparent;
+    border: .25vw solid black;
+    color: black;
+}
+.btn.bordered.black:hover {
+	background-color: black;
+	color: white;
+}
 .btn.sm {
     padding: .6vw 1vw;
+}
+.btn.xsm {
+    padding: .3vw 1vw;
 }
 
 section.product-groups {
@@ -853,7 +916,6 @@ span.material-desc {
     border: 1px solid #ddd;
 }
 .input-group.flex-row {
-    flex-direction: row;
     align-items: center;
 }
 
@@ -956,4 +1018,56 @@ img.cart-view-thumb {
     height: 9vw;
     object-fit: cover;
     flex: 0 0 6vw;
+}
+.fa-norm {
+    font-size: 1.1vw !important;
+}
+.fa-round {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    margin-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.d-flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-row.wrap {
+    flex-wrap: wrap;
+}
+.flex-row.spaceb {
+    justify-content: space-between;
+}
+.flex-row.alignini {
+    align-items: initial;
+}
+.flex-row.aligncen {
+    align-items: center;
+}
+
+.padd-lr-0 {
+    padding-left: 0 !important;
+    padding-right: 0  !important;
 }
