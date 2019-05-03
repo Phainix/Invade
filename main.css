@@ -14,7 +14,7 @@
 }
 .breadcrumb:not(:last-child)::after {
     content: '\f105';
-    font: 14px/1em "FontAwesome";
+    font: 1.6rem "FontAwesome";
     position: absolute;
     right: -.35vw;
 }
@@ -58,7 +58,7 @@ span.category-desc {
 }
 .product-sidebar {
     flex: 0 0 15%;
-    padding: 2vw 0vw;
+    padding: 1vw 0vw;
 }
 .product-main {
     display: flex;
@@ -129,13 +129,13 @@ select#sort {
 }
 .page.next::after {
     content: '\f105';
-    font: 14px/1em "FontAwesome";
+    font: 1.6rem "FontAwesome";
     position: absolute;
     right: -.4vw;
 }
 .page.prev::after {
     content: '\f104';
-    font: 14px/1em "FontAwesome";
+    font: 1.6rem "FontAwesome";
     position: absolute;
     left: -.4vw;
 }
